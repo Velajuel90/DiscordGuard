@@ -14,7 +14,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("DG-ping")) {
     let ping = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":white_check_mark: Protection is on!");
+    .addField("Discord Guard", ":white_check_mark: Protection is on in your server!");
 
 message.channel.send(ping);
   }
