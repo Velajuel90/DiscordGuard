@@ -1185,10 +1185,6 @@ if (message.content.startsWith("DG-test")) {
 });
 
 
-
-
-
-client.login('NDYxNTk1ODY5NjMyNzkwNTI4.DiE3fg.vvlWA5M3MlfNm52iocNGe0BlGkc');
-
+client.login(process.env.BOT_TOKEN);
 
   
