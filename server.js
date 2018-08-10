@@ -1178,7 +1178,7 @@ client.on('message', (message) => {
 });           
 
 client.on('message', (message) => {
-if (message.content.startsWith("DG-test")) {
+if (message.content.startsWith("DG-logstest")) {
   const Logs = client.channels.find('name', "Logs");
   Logs.send('The logs are working!');
 }
