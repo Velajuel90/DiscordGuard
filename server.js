@@ -57,7 +57,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 2 messages.");
+    .addField("Discord Guard", ":wastebasket: I have deleted the last 1 messages.");
     
     message.channel.send(purge2);
 	}
