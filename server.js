@@ -21,6 +21,16 @@ message.channel.send(ping);
 });
 
 client.on("message", (message) => {
+  if (message.content.startsWith("DG-support")) {
+    let ping = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard Support", "https://discord.gg/6rzUtyf");
+
+message.channel.send(ping);
+  }
+});
+
+client.on("message", (message) => {
   if (message.content.startsWith("DG-permissions")) {
     let perm = new Discord.RichEmbed()
     .setColor("#000000")
@@ -1085,6 +1095,7 @@ client.on('message', (message) => {
   .addField("DG-database", 'Check the database from Discord Guard')
   .addField("DG-lang", 'Checks which languages are supported by Discord Guard')
   .addField("DG-permissions", 'The permissions that the bot need to function normally')
+  .addField("DG-support", 'Join the support server')
   .addField("Discord Guard Swear Word Detection", 'Discord Guard has a database to detect swear words');
     message.member.send(embed);
   }
