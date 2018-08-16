@@ -1144,7 +1144,7 @@ client.on('message', (message) => {
 	if (message.content.startsWith("DG-invite")) {
     let invite = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard Invite", "https://discordapp.com/oauth2/authorize?&client_id=461595869632790528&scope=bot&permissions=0");
+    .addField("Discord Guard Invite", "https://discordapp.com/oauth2/authorize?&client_id=461595869632790528&scope=bot&permissions=8");
     
     message.channel.send(invite);
 	}
