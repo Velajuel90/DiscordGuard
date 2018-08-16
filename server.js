@@ -52,6 +52,19 @@ message.channel.send(ping);
 });
 
 client.on("message", (message) => {
+	if (message.content.startsWith("DG-1purge")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I have deleted the last 2 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+
+client.on("message", (message) => {
 	if (message.content.startsWith("DG-2purge")) {
       let messagecount = parseInt(2);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
@@ -1065,7 +1078,7 @@ client.on('message', (message) => {
   .addField("DG-info", 'Displays info about your server')
   .addField("DG-invite", 'Gets invite link for your server')
   .addField("DG-vote", 'Vote for the bot')
-  .addField("DG-<number>purge", 'Deletes some message. Do not use the <>. You can choose between 2 and 10. Example: DG-4purge')
+  .addField("DG-<number>purge", 'Deletes some message. Do not use the <>. You can choose between 1 and 10. Example: DG-4purge')
   .addField("DG-kick <@user> <reason>", 'Kick a user. Do not use the <>. Example: DG-kick @user#0000 angry')
   .addField("DG-ban <@user> <reason>", 'Ban a user. Do not use the <>. Example: DG-ban @user#0000 stupid')
   .addField("DG-warn <@user> <reason>", 'Warn a user. Do not use the <>. Example DG-warn @user#000 do not use swear words. NOTE: the user gets a dm!')
