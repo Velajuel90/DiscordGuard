@@ -7,7 +7,7 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`Protecting ${client.guilds.size} servers | DG-help | The bot is back!`);
+      client.user.setActivity(`Protecting ${client.guilds.size} servers | DG-help`);
 });
 
 client.on("message", (message) => {
