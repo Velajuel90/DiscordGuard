@@ -1210,7 +1210,7 @@ if (message.content.startsWith("DG-logstest")) {
 
 client.on('guildMemberAdd', (member) => {
  const Logs = client.channels.find('name', "Logs");
-  Logs.send('**' + member.user.username + '**, has joined the server');
+  Logs.send('**' + `${member.user.username}` + '**, has joined the server');
 });
 
 client.login(process.env.BOT_TOKEN);
