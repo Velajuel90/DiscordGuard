@@ -1226,6 +1226,27 @@ client.on('messageDelete', async (message) => {
   logs.send(logsem);
 })
 
+
+client.on('messageDelete', async (message) => {
+  const logs = message.guild.channels.find('name', 'logs');
+  const entry = await message.guild.fetchAuditLogs({type: 'INVITE_CREATE'}).then(audit => audit.entries.first())
+  if (message.guild.me.hasPermission('MANAGE_CHANNELS') && !logs) {
+    message.guild.createChannel('logs', 'text');
+  }
+  if (!message.guild.me.hasPermission('MANAGE_CHANNELS') && !logs) { 
+   message.channel.send('The logs channel does not exist or I do not have the right permissions')
+  }  
+  let user = message.author.username
+   let logsem = new Discord.RichEmbed()
+    .setDescription("Discord Guard Logs")
+    .setColor("#000000")
+    .addField("Server Name", message.guild.name)
+    .addField("Log", `An invite was created in ${message.channel.name} by ${user}`)
+  logs.send(logsem);
+})
+
+client.login(process.env.BOT_TOKEN);
+
 client.login(process.env.BOT_TOKEN);
 
   
