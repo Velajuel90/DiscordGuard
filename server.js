@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const newUsers = [];
 module.exports = (args) => {
 const express = require('./express.js');
 express(args);
@@ -1225,6 +1226,18 @@ client.on('messageDelete', async (message) => {
     .addField("Log", `A message was deleted in ${message.channel.name} by ${user}`)
   logs.send(logsem);
 })
+
+client.on("guildMemberAdd", (member) => {
+  const guild = member.guild;
+  if (!newUsers[guild.id]) newUsers[guild.id] = new Discord.Collection();
+  newUsers[guild.id].set(member.id, member.user);
+
+  if (newUsers[guild.id].size > 1) {
+    const userlist = newUsers[guild.id].map(u => u.toString()).join(" ");
+    guild.channels.find("name", "Logs").send(userlist + 'has joined the server');
+    newUsers[guild.id].clear();
+  }
+});
 
 client.login(process.env.BOT_TOKEN);
 
