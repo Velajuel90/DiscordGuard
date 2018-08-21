@@ -193,6 +193,18 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
+	if (message.content.includes("@everyone")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "It is not allowed to tag everyone in this server. The text is a variant of Potential Unwanted Message (PUM) and Discord Guard blocked the message.");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
 	if (message.content.includes("gay")) {
       let messagecount = parseInt(1);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
