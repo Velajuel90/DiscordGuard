@@ -186,7 +186,8 @@ client.on("message", (message) => {
 	if (message.content.startsWith("DG-database")) {
     let db = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard Database", "Database version: 2018.1.0.3");
+    .addField("Discord Guard Database", "Database version: 2018.1.8.24")
+    .addField("Update Dat", "August 24 2018");
     
     message.channel.send(db);
 	}
@@ -805,6 +806,18 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
+	if (message.content.includes("HOMO")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.711");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
 	if (message.content.includes("kanker")) {
       let messagecount = parseInt(1);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
@@ -823,6 +836,42 @@ client.on("message", (message) => {
     let block = new Discord.RichEmbed()
     .setColor("#000000")
     .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("kkr")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070.1");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Kkr")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070.1");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("KKR")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070.1");
     
     message.channel.send(block);
 	}
@@ -986,6 +1035,18 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
 	if (message.content.includes("godver")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.667");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("GODVER")) {
       let messagecount = parseInt(1);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
@@ -1200,24 +1261,6 @@ client.on('message', (message) => {
 
     return message.channel.send(serverembed);
   }
-});
-
-client.on('message', (message) => {
-  if (message.content.startsWith("DG-createlog")) {
-    function makeChannel(message){
-    var server = message.guild;
-    var name = "Logs";
-
-    server.createChannel(name, "text");
-    }
-  }
-});           
-
-client.on('message', (message) => {
-if (message.content.startsWith("DG-logstest")) {
-  const Logs = client.channels.find('name', "Logs");
-  Logs.send('The logs are working!');
-}
 });
 
 client.login(process.env.BOT_TOKEN);
