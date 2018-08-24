@@ -187,7 +187,7 @@ client.on("message", (message) => {
     let db = new Discord.RichEmbed()
     .setColor("#000000")
     .addField("Discord Guard Database", "Database version: 2018.1.8.24")
-    .addField("Update Dat", "August 24 2018");
+    .addField("Update Date", "August 24 2018");
     
     message.channel.send(db);
 	}
