@@ -186,8 +186,8 @@ client.on("message", (message) => {
 	if (message.content.startsWith("DG-database")) {
     let db = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard Database", "Database version: 2018.1.8.24")
-    .addField("Update Date", "August 24 2018")
+    .addField("Discord Guard Database", "Database version: 2018.2.8.26")
+    .addField("Update Date", "August 26 2018")
     .addField("Added swearwords since last update", "27");
     
     message.channel.send(db);
