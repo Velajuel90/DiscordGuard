@@ -187,7 +187,8 @@ client.on("message", (message) => {
     let db = new Discord.RichEmbed()
     .setColor("#000000")
     .addField("Discord Guard Database", "Database version: 2018.1.8.24")
-    .addField("Update Date", "August 24 2018");
+    .addField("Update Date", "August 24 2018")
+    .addField("Added swearwords since last update", "27");
     
     message.channel.send(db);
 	}
@@ -1112,6 +1113,552 @@ client.on("message", (message) => {
     let block = new Discord.RichEmbed()
     .setColor("#000000")
     .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.841");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("schweine")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.004");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Schweine")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.004");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("arschlog")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.100");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Arschlog")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.100");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Godverdommus")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.376");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("godverdommus")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.376");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("kloatzack")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.478");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Schlampe")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.679");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Hurensohn")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.060");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("hurensohn")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.060");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("schlampe")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.679");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Kloatzack")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.478");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Krebshund")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.880");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("krebshund")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.880");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("fotze")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.701");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Fotze")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.701");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("mausbiest")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.764");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Muschi")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.398");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("muschi")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.398");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Gewitterzau")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.551");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Idiote")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.270");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("panzermaus")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.091");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("scheisse")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Scheiße")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101.A");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("scheiße")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101.A");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Ficken")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.908");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Verdammt")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.623");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("verdammt")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.623");
+    
+    message.channel.send(block);
+	}
+});
+client.on("message", (message) => {
+	if (message.content.includes("ficken")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.908");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Scheisse")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101");
+    
+    message.channel.send(block);
+	}
+});
+client.on("message", (message) => {
+	if (message.content.includes("Panzermaus")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.091");
+    
+    message.channel.send(block);
+	}
+});
+client.on("message", (message) => {
+	if (message.content.includes("idiote")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.270");
+    
+    message.channel.send(block);
+	}
+});
+client.on("message", (message) => {
+	if (message.content.includes("gewitterzau")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.551");
+    
+    message.channel.send(block);
+	}
+});
+client.on("message", (message) => {
+	if (message.content.includes("Mausbiest")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.764");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Schwalbe")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.850");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("schwalbe")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.850");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("hammergeil")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.007");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Hammergeil")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.007");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Schlabberfotze")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.444");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("schlabberfotze")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.444");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Hundsfötter")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.726");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("dorfthorsten")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.225");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Dorfthorsten")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.225");
+    
+    message.channel.send(block);
+	}
+});
+client.on("message", (message) => {
+	if (message.content.includes("hundsfötter")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.726");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("vollfosten")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.140");
+    
+    message.channel.send(block);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.includes("Vollfosten")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.140");
     
     message.channel.send(block);
 	}
