@@ -7,7 +7,7 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`The bot is updating. Response time can be pretty slow and sometimes he does not respond. Thank you for understanding`);
+      client.user.setActivity(`DG-help | ${client.guilds.size} servers are protected`);
 });
 
 client.on("message", (message) => {
@@ -24,7 +24,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("DG-support")) {
     let ping = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard Support", "https://discord.gg/6rzUtyf");
+    .addField("Discord Guard Support", "Link to the support server: https://discord.gg/6rzUtyf");
 
 message.channel.send(ping);
   }
@@ -55,7 +55,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("DG-lang")) {
     let ping = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", "Supported languages: English and Dutch");
+    .addField("Discord Guard", "Supported languages: English, Dutch and German. More languages added later!");
 
 message.channel.send(ping);
   }
@@ -67,7 +67,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 1 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 1 messages.");
     
     message.channel.send(purge2);
 	}
@@ -80,7 +80,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 2 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 2 messages.");
     
     message.channel.send(purge2);
 	}
@@ -92,7 +92,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 3 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 3 messages.");
     
     message.channel.send(purge2);
 	}
@@ -104,7 +104,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 4 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 4 messages.");
     
     message.channel.send(purge2);
 	}
@@ -116,7 +116,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 5 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 5 messages.");
     
     message.channel.send(purge2);
 	}
@@ -128,7 +128,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 6 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 6 messages.");
     
     message.channel.send(purge2);
 	}
@@ -140,7 +140,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 7 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 7 messages.");
     
     message.channel.send(purge2);
 	}
@@ -152,7 +152,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 8 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 8 messages.");
     
     message.channel.send(purge2);
 	}
@@ -164,7 +164,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 9 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 9 messages.");
     
     message.channel.send(purge2);
 	}
@@ -176,7 +176,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":wastebasket: I have deleted the last 10 messages.");
+    .addField("Discord Guard", ":wastebasket: I deleted the last 10 messages.");
     
     message.channel.send(purge2);
 	}
