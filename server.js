@@ -17,7 +17,7 @@ client.on("message", (message) => {
     .addField("Discord Guard", ":white_check_mark: Protection is on in your server!");
 
 message.channel.send(ping)
-	  message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");  
+	  message.channel.send("Responce time was " + new Date().getTime() - message.createdTimestamp + " ms");  
   }
 });
 
