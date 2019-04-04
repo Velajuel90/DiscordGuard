@@ -7,17 +7,16 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`Protecting ${client.guilds.size} servers | DG-help`);
+      client.user.setActivity(`The bot is updating. Response time can be pretty slow and sometimes he does not respond. Thank you for understanding`);
 });
 
 client.on("message", (message) => {
   if (message.content.startsWith("DG-ping")) {
     let ping = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Discord Guard", ":white_check_mark: Protection is on in your server!");
-
+    .addField("Discord Guard", ":white_check_mark: Protection is on in your server!")
+    .addField("Response time", new Date().getTime() - message.createdTimestamp + " ms");
 message.channel.send(ping)
-	  message.channel.send("Responce time was " + new Date().getTime() - message.createdTimestamp + " ms");  
   }
 });
 
