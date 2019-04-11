@@ -41,7 +41,7 @@ message.channel.send(perm);
 });
 
 client.on("message", (message) => {
-	if (message.content.startWith("DG-faq")) {
+	if (message.content.startsWith("DG-faq")) {
     let block = new Discord.RichEmbed()
     .setColor("#000000")
     .addField("Discord Guard FAQ", "The Discord Guard FAQ")
