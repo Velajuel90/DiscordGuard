@@ -40,6 +40,18 @@ message.channel.send(perm);
   }
 });
 
+client.on("message", (message) => {
+	if (message.content.startWith("DG-faq")) {
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard FAQ", "")
+    .addField("How can I disable @ everyone block?", "It is not possible right now. I recommend you to use a channel and disable the following permissions: Administrator, Manage_messages, Read_text_messages, Send_messages, Read_message_history")
+    .addField("How can I disable that the bot does not block swearwords?", "It is not possible right now. Try the solution as above")
+    .addField("Your question not in this FAQ?", "Feel free to join the support server and ask your question");
+    message.channel.send(block);
+	}
+});
+
 
 client.on("message", (message) => {
   if (message.content.startsWith("DG-vote")) {
