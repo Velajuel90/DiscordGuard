@@ -1728,6 +1728,7 @@ client.on('message', (message) => {
   .addField("DG-lang", 'Checks which languages are supported by Discord Guard')
   .addField("DG-permissions", 'The permissions that the bot need to function normally')
   .addField("DG-support", 'Join the support server')
+  .addField("DG-faq", 'Get a list of earlier asked questions')
   .addField("Discord Guard Swear Word Detection", 'Discord Guard has a database to detect swear words');
     message.member.send(embed);
   }
