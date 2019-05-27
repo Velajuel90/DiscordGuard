@@ -219,7 +219,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.includes("https", "yac")) {
+	if (message.content.includes("https yac")) {
       let messagecount = parseInt(1);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
