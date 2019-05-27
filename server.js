@@ -219,6 +219,19 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
+	if (message.content.includes("https" + "yac")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let block = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Website blocked!", "Discord Guard has detected malicious content on that website and blocked the website. Name: Discord/WEB.001");
+    
+    message.channel.send(block);
+	}
+});
+
+
+client.on("message", (message) => {
 	if (message.content.includes("gay")) {
       let messagecount = parseInt(1);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
