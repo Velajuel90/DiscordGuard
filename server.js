@@ -2006,7 +2006,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if (message.content.startsWith("DG-about")) {
-    let sicon = message.client.iconUrl;
+    let sicon = message.bot.iconUrl;
      let about = new Discord.RichEmbed()
      .setDescription("Discord Guard v1.8.2")
      .setColor("#000000")
@@ -2014,7 +2014,7 @@ client.on('message', (message) => {
      .addField("Bot Creator", "Fermion#3927")
      .addField("Server running", `${client.guilds.size}`)
      .addField("Amount of users", `${client.users.size}`)
-     .addField("Usage of RAM", process.memoryUsage());
+     .addField("Usage of RAM", process.memoryUsage().heapUsed / 1024 / 1024);
      
  return message.channel.send(about);
   }
