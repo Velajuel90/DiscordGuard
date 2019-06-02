@@ -1899,6 +1899,7 @@ client.on('message', (message) => {
   .addField("DG-help", 'Gets help page')
   .addField("DG-ping", 'Checks if the bot responds')
   .addField("DG-info", 'Displays info about your server')
+  .addField("DG-about", 'Displays infor about the bot')
   .addField("DG-invite", 'Gets invite link for your server')
   .addField("DG-vote", 'Vote for the bot')
   .addField("DG-<number>purge", 'Deletes some message. Do not use the <>. You can choose between 1 and 25. Example: DG-4purge')
@@ -2006,7 +2007,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if (message.content.startsWith("DG-about")) {
-    let sicon = "https://images.discordapp.net/avatars/461595869632790528/9143317d82e9f74a07c60d2e452220e6.png?size=512";
+    let sicon = "https://cdn.discordapp.com/app-icons/461595869632790528/9143317d82e9f74a07c60d2e452220e6.png?size=512";
      let about = new Discord.RichEmbed()
      .setDescription("Discord Guard v1.8.2")
      .setColor("#000000")
@@ -2014,7 +2015,6 @@ client.on('message', (message) => {
      .addField("Bot Creator", "Fermion#3927")
      .addField("Server running", `${client.guilds.size}`)
      .addField("Amount of users", `${client.users.size}`)
-     .addField("Usage of RAM", process.memoryUsage().heapUsed / 1024 / 1024);
      
  return message.channel.send(about);
   }
