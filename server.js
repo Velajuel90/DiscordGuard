@@ -2006,7 +2006,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if (message.content.startsWith("DG-about")) {
-    let sicon = message.bot.iconUrl;
+    let sicon = https://images.discordapp.net/avatars/461595869632790528/9143317d82e9f74a07c60d2e452220e6.png?size=512;
      let about = new Discord.RichEmbed()
      .setDescription("Discord Guard v1.8.2")
      .setColor("#000000")
