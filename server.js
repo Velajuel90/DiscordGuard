@@ -2010,7 +2010,7 @@ client.on('message', (message) => {
      let about = new Discord.RichEmbed()
      .setDescription("Discord Guard v1.8.2")
      .setColor("#000000")
-    .setThumbnail(sicon)
+     .setThumbnail(sicon)
      .addField("Bot Creator", "Fermion#3927")
      .addField("Server running", `${client.guilds.size}`)
      .addField("Amount of users", `${client.users.size}`)
