@@ -7,7 +7,7 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`DG-help | ${client.guilds.size} servers are protected`);
+      client.user.setActivity(`DG-help | ${client.guilds.size} servers are protected | v1.8.2`);
 });
 
 client.on("message", (message) => {
@@ -189,6 +189,186 @@ client.on("message", (message) => {
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
     .addField("Discord Guard", ":wastebasket: I deleted the last 10 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-11purge")) {
+      let messagecount = parseInt(11);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 11 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-12purge")) {
+      let messagecount = parseInt(12);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 12 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-13purge")) {
+      let messagecount = parseInt(13);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 13 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-14purge")) {
+      let messagecount = parseInt(14);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 14 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-15purge")) {
+      let messagecount = parseInt(15);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 15 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-16purge")) {
+      let messagecount = parseInt(16);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 16 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-17purge")) {
+      let messagecount = parseInt(17);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 17 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-18purge")) {
+      let messagecount = parseInt(18);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 18 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-19purge")) {
+      let messagecount = parseInt(19);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 19 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-20purge")) {
+      let messagecount = parseInt(20);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 20 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-21purge")) {
+      let messagecount = parseInt(21);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 21 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-22purge")) {
+      let messagecount = parseInt(10);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 22 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-23purge")) {
+      let messagecount = parseInt(23);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 23 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-24purge")) {
+      let messagecount = parseInt(24);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 24 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-25purge")) {
+      let messagecount = parseInt(25);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 25 messages.");
     
     message.channel.send(purge2);
 	}
@@ -1721,7 +1901,7 @@ client.on('message', (message) => {
   .addField("DG-info", 'Displays info about your server')
   .addField("DG-invite", 'Gets invite link for your server')
   .addField("DG-vote", 'Vote for the bot')
-  .addField("DG-<number>purge", 'Deletes some message. Do not use the <>. You can choose between 1 and 10. Example: DG-4purge')
+  .addField("DG-<number>purge", 'Deletes some message. Do not use the <>. You can choose between 1 and 25. Example: DG-4purge')
   .addField("DG-kick <@user> <reason>", 'Kick a user. Do not use the <>. Example: DG-kick @user#0000 angry')
   .addField("DG-ban <@user> <reason>", 'Ban a user. Do not use the <>. Example: DG-ban @user#0000 stupid')
   .addField("DG-warn <@user> <reason>", 'Warn a user. Do not use the <>. Example DG-warn @user#000 do not use swear words. NOTE: the user gets a dm!')
@@ -1823,6 +2003,24 @@ client.on('message', (message) => {
     return message.channel.send(serverembed);
   }
 });
+
+client.on('message', (message) => {
+  if (message.content.startsWith("DG-about")) {
+    let sicon = message.client.iconUrl;
+     let about = new Discord.RichEmbed()
+     .setDescription("Discord Guard v1.8.2")
+     .setColor("#000000")
+    .setThumbnail(sicon)
+     .addField("Bot Creator", "Fermion#3927")
+     .addField("Server running", `${client.guilds.size}`)
+     .addField("Amount of users", `${client.users.size}`)
+     .addField("Usage of RAM", process.memoryUsage());
+     
+ return message.channel.send(about);
+  }
+}):
+
+     
 
 client.login(process.env.BOT_TOKEN);
 
