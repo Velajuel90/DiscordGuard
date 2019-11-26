@@ -7,7 +7,7 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`DG-help | ${client.guilds.size} servers are protected | v1.8.2`);
+      client.user.setActivity(`DG-help | ${client.guilds.size} servers are protected | v1.8.3`);
 });
 
 client.on("message", (message) => {
@@ -375,12 +375,73 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
+	if (message.content.startsWith("DG-26purge")) {
+      let messagecount = parseInt(26);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 25 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-27purge")) {
+      let messagecount = parseInt(27);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 25 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-28purge")) {
+      let messagecount = parseInt(28);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 25 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-29purge")) {
+      let messagecount = parseInt(29);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 25 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("DG-30purge")) {
+      let messagecount = parseInt(30);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Discord Guard", ":wastebasket: I deleted the last 25 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
 	if (message.content.startsWith("DG-database")) {
     let db = new Discord.RichEmbed()
     .setColor("#000000")
     .addField("Discord Guard Database", "Database version: 2018.2.8.26")
     .addField("Update Date", "August 26 2018")
-    .addField("Added swearwords since last update", "27");
+    .addField("Added swearwords since last update", "27")
+    .addField("Current bot version", "1.8.3, November 26 2019");
     
     message.channel.send(db);
 	}
@@ -1868,8 +1929,8 @@ client.on("message", (message) => {
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send(":x: Can't find user! Please check it and try again.");
     let kReason = args.join(" ").slice(22);
-    if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send(":x: That person can't be kicked! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
-    if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be kicked! Reason: It is a bot, it is not a valid reason or you have the same permissions.");
+    if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(":x: That person can't be kicked! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
+    if(kUser.hasPermission("KICK_MEMBERS")) return message.channel.send(":x: That person can't be kicked! Reason: It is a bot, it is not a valid reason or you have the same permissions.");
 
     let kickEmbed = new Discord.RichEmbed()
     .setDescription("Discord Guard Kick")
@@ -1902,7 +1963,7 @@ client.on('message', (message) => {
   .addField("DG-about", 'Displays infor about the bot')
   .addField("DG-invite", 'Gets invite link for your server')
   .addField("DG-vote", 'Vote for the bot')
-  .addField("DG-<number>purge", 'Deletes some message. Do not use the <>. You can choose between 1 and 25. Example: DG-4purge')
+  .addField("DG-<number>purge", 'Deletes some message. Do not use the <>. You can choose between 1 and 30. Example: DG-4purge')
   .addField("DG-kick <@user> <reason>", 'Kick a user. Do not use the <>. Example: DG-kick @user#0000 angry')
   .addField("DG-ban <@user> <reason>", 'Ban a user. Do not use the <>. Example: DG-ban @user#0000 stupid')
   .addField("DG-warn <@user> <reason>", 'Warn a user. Do not use the <>. Example DG-warn @user#000 do not use swear words. NOTE: the user gets a dm!')
@@ -1924,8 +1985,8 @@ client.on("message", (message) => {
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send(":x: Can't find user! Please check it and try again");
     let bReason = args.join(" ").slice(22);
-    if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send(":x: That person can't be banned! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
-    if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be banned! Reason: It is a bot, it is not a valid reason or you have the same permissions.");
+    if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send(":x: That person can't be banned! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
+    if(bUser.hasPermission("BAN_MEMBERS")) return message.channel.send(":x: That person can't be banned! Reason: It is a bot, it is not a valid reason or you have the same permissions.");
 
     let banEmbed = new Discord.RichEmbed()
     .setDescription("Discord Guard Ban")
@@ -1960,7 +2021,7 @@ client.on("message", (message) => {
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send(":x: Can't find user! Please check it and try again.");
     let kReason = args.join(" ").slice(22);
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be warned! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
+    if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(":x: That person can't be warned! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
 
     let warned = new Discord.RichEmbed()
     .setDescription("Discord Guard Warn")
