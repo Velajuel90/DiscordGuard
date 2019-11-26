@@ -20,4 +20,6 @@
     "fs": "^0.0.2",
     "discord.js-commando": "^0.10.0"
   }
+  "engines": {
+    "npm": "10.16.0"
  }
