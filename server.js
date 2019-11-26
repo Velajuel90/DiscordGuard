@@ -1,9 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-module.exports = (args) => {
-const express = require('./express.js');
-express(args);
-    };
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
