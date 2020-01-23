@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`DG-help | ${client.guilds.size} servers are protected | v1.8.3`);
+      client.user.setActivity(`DG-help | ${client.guilds.size} servers are protected | v1.8.4`);
 });
 
 client.on("message", (message) => {
@@ -449,8 +449,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "It is not allowed to tag everyone in this server. The text is a variant of Potential Unwanted Message (PUM) and Discord Guard blocked the message.");
-    
+    .addField("Message blocked!", "It is not allowed to tag everyone in this server. The text is a variant of Potential Unwanted Message (PUM) and Discord Guard blocked the message.")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     message.channel.send(block);
 	}
 });
@@ -462,7 +462,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.001");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.001")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -474,7 +475,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.001");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.001")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -486,7 +488,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.001");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.001")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -498,7 +501,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.045");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.045")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -510,7 +514,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.045");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.045")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -522,7 +527,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.200");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.200")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -533,7 +539,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.200");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.200")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -545,7 +552,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.066");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.066")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -557,7 +565,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.066");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.066")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -569,7 +578,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.224");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.224")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -581,7 +591,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.224");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.224")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -593,7 +604,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.224");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.224")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -605,7 +617,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.495");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.495")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -617,7 +630,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.495");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.495")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -629,7 +643,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.099");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.099")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -641,7 +656,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.099");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.099")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -653,7 +669,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.536");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.536")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -665,7 +682,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.536");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.536")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -677,7 +695,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.536");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.536")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -689,7 +708,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.066");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.066")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -701,7 +721,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.101");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.101")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -713,7 +734,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.101");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.101")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -725,7 +747,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.112");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.112")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -737,7 +760,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.721");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.721")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -749,7 +773,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.721");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.721")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -761,7 +786,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.477");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.477")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -773,7 +799,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.477");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.477")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -785,7 +812,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.655");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.655")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -797,7 +825,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.655");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.655")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -809,7 +838,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.755");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.755")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -821,7 +851,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.655");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.655")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -833,7 +864,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.112");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.112")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -845,7 +877,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.842");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.842")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -857,7 +890,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.842");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.842")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -869,7 +903,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.567");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.567")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -881,7 +916,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.452");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.452")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -893,7 +929,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.452");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.452")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -905,7 +942,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.671");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.671")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -917,7 +955,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.671");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.671")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -930,7 +969,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.567");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.567")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -942,7 +982,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.681");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.681")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -954,7 +995,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.681");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.681")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -966,7 +1008,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.308");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.308")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -978,7 +1021,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.951");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.951")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -990,7 +1034,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.951");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.951")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1002,7 +1047,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.308");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.308")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1014,7 +1060,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.333");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.333")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1026,7 +1073,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.333");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.333")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1038,7 +1086,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.711");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.711")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1050,7 +1099,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.711");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.711")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1062,7 +1112,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.711");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.711")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1074,7 +1125,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1086,7 +1138,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1098,7 +1151,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070.1");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070.1")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1110,7 +1164,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070.1");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070.1")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1122,7 +1177,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070.1");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.070.1")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1134,7 +1190,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.209");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.209")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1146,7 +1203,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.209");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.209")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1158,7 +1216,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.852");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.852")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1170,7 +1229,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.852");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.852")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1182,7 +1242,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.174");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.174")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1194,7 +1255,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.174");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.174")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1206,7 +1268,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.448");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.448")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1218,7 +1281,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.448");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.448")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1230,7 +1294,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.505");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.505")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1242,7 +1307,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.505");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.505")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1254,7 +1320,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.506");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.506")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1266,7 +1333,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.506");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.506")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1278,7 +1346,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.667");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.667")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1290,7 +1359,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.667");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.667")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1302,7 +1372,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.667");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.667")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1314,7 +1385,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.767");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.767")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1326,7 +1398,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.767");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.767")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1338,7 +1411,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.767");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.767")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1350,7 +1424,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.841");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.841")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1362,7 +1437,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.841");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.NL.841")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1374,7 +1450,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.004");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.004")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1386,7 +1463,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.004");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.004")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1398,7 +1476,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.100");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.100")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1410,7 +1489,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.100");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.100")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1422,7 +1502,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.376");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.376")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1434,7 +1515,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.376");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.376")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1446,7 +1528,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.478");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.478")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1458,7 +1541,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.679");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.679")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1470,7 +1554,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.060");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.060")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1482,7 +1567,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.060");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.060")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1494,7 +1580,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.679");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.679")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1506,7 +1593,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.478");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.478")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1518,7 +1606,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.880");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.880")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1530,7 +1619,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.880");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.880")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1542,7 +1632,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.701");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.701")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1554,7 +1645,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.701");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.701")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1566,7 +1658,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.764");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.764")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1578,7 +1671,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.398");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.398")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1590,7 +1684,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.398");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.398")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1602,7 +1697,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.551");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.551")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1614,7 +1710,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.270");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.270")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1626,7 +1723,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.091");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.091")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1638,7 +1736,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1650,7 +1749,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101.A");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101.A")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1662,7 +1762,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101.A");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101.A")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1674,7 +1775,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.908");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.908")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1686,7 +1788,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.623");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.623")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1698,7 +1801,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.623");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.623")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1709,7 +1813,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.908");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.908")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1721,7 +1826,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.101")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1732,7 +1838,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.091");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.091")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1743,7 +1850,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.270");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.270")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1754,7 +1862,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.551");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.551")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1765,7 +1874,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.764");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.764")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1777,7 +1887,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.850");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.850")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1789,7 +1900,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.850");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.850")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1801,7 +1913,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.007");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.007")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1813,7 +1926,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.007");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.007")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1825,7 +1939,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.444");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.444")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1837,7 +1952,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.444");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.444")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1849,7 +1965,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.726");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.726")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1861,7 +1978,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.225");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.225")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1873,7 +1991,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.225");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.225")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1884,7 +2003,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.726");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.726")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1896,7 +2016,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.140");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.140")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
@@ -1908,7 +2029,8 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let block = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.140");
+    .addField("Message blocked!", "Discord Guard has detected a swear word and blocked the message. Name: Discord/SW.D.140")
+    .setFooter("Note: You can disable this by give Discord Guard deny access to delete messages and send messages.");
     
     message.channel.send(block);
 	}
